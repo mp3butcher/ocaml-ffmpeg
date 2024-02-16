@@ -11,7 +11,7 @@ let () =
           | Some pc -> (
               match
                 C.Pkg_config.query_expr_err pc ~package:"libswscale"
-                  ~expr:"libswscale >= 4.8.100"
+                  ~expr:"libswscale >= 7.6.100"
               with
                 | Error msg -> failwith msg
                 | Ok deps -> deps)

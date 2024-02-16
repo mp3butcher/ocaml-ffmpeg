@@ -16,7 +16,7 @@ let () =
           | Some pc -> (
               match
                 C.Pkg_config.query_expr_err pc ~package:"libavdevice"
-                  ~expr:"libavdevice >= 57.10.100"
+                  ~expr:"libavdevice >= 60.4.100"
               with
                 | Error msg -> failwith msg
                 | Ok deps -> deps)

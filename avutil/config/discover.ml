@@ -11,7 +11,7 @@ let () =
           | Some pc -> (
               match
                 C.Pkg_config.query_expr_err pc ~package:"libavutil libavcodec"
-                  ~expr:"libavutil >= 55.78.100, libavcodec >= 57.107.100"
+                  ~expr:"libavutil >= 58.38.100, libavcodec >= 60.39.101"
               with
                 | Error msg -> failwith msg
                 | Ok deps -> deps)
